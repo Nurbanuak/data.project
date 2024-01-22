@@ -59,3 +59,64 @@ Projenin çalışması için aşağıdaki Python kütüphanelerine ihtiyaç vard
 - scikit-learn
 - matplotlib
 - seaborn
+
+## Projenin Amacı
+ Obezite üzerinde etkili olan faktörlerin neler olduğunu belirlemek ve bunlar üzerinde bir model oluşturarak modelin doğruluğunu ölçümlerle karşılaştırmak.
+
+ Uygulanan modeli doğrulamak için obezite olan hastalerı tespit etmek ve belirlenebilmesine yönelik veri görselleştirme yapmak ve makine öğrenimini kullanmak.
+
+## Projenin Önemi
+ Obezitenin küresel bir sağlık sorunu olması ve bu tür bir modelin kullanılarak bireylere sağlıklı yaşam tarzı konusunda bilgi verilmesi veya sağlık profesyonellerine yardımcı olmasıdır. Bu tür modeller, obeziteye yönelik önleyici stratejilerin geliştirilmesinde ve toplum sağlığının iyileştirilmesinde önemli bir rol oynayabilir.
+
+
+
+Obezite tahminleme yapmak için bir makine öğrenimi modeli oluşturulması aşamaları:
+
+# Veri Toplama ve Hazırlama:
+
+Obezite ile ilgili bir veri seti bulunması ve bu veri setini incelenmesi.
+Veri setinde obezite durumunu ifade eden bir hedef değişken ve obezite ile ilişkili olabilecek özellikleri içeren sütunlar bulunmalıdır.
+
+# Veri Keşfi ve Temizleme:
+
+Veri setinin analiz edilmesi, eksik değerlerin doldurulması veya çıkarılması.
+Gerekiyorsa kategorik özellikleri sayısala dönüştürülmesi.
+Anlamsız veya aykırı verileri düzeltilesi veya çıkarılması.
+# Veri Görselleştirme
+ Veri setinin daha iyi anlaşıması için veriler arasındaki bağlantıların görselleştirilmesi bunun için kullanılan bazı metodlar:
+  - Pair Plot: Bir veri kümesindeki farklı sayısal özelliklerin çiftler arasındaki ilişkileri ve dağılımları görselleştiren bir grafik türüdür. Seaborn kütüphanesi içinde bulunan sns.pairplot() fonksiyonu, bir DataFrame içindeki sayısal sütunlar arasındaki ilişkileri çiftler halinde gösteren bir matris oluşturur.
+  - Bar Plot(Sütun Grafiği): Kategorik verilerin miktarını karşılaştırmak için.
+  - Histogram: Sürekli bir değişkenin dağılımını görmek için.
+  - Pie Chart: Bir bütünün parçalarını yüzde olarak göstermek için.
+  - Heatmap: İki boyutlu bir matrisin değerlerini renklerle göstermek için.
+
+# Veri Bölme:
+
+Veri setinizi eğitim ve test veri setlerine ayırılması. Bu, modeli eğitirken kullanılan veri seti ile modelin gerçek dünya performansını değerlendirmek için kullanılan veri setini ayırmaya yardımcı olur.
+
+# Model Seçimi:
+
+Obezite tahminlemesi için uygun bir model seçin. Bu veri için kullanılan makine öğrenimi modellerinin bazıları:
+  - K-nn
+  - Random Forest
+  - SVM Model
+  - Logistic Regression
+  - Decision Tree
+  
+Seçilen modelin eğitilmesi. Eğitim veri setini kullanarak modelin obezite durumunu tahmin etmeyi öğrenmesinin sağlanması.
+
+# Model Değerlendirmesi:
+
+Test veri seti üzerinde modelin değerlendirilmesi. Genellikle accuracy, recall, precision ve F1-skor gibi metrikler kullanılır.
+
+# Model Ayarı (Opsiyonel):
+
+Modelinizi geliştirmek için hiperparametre ayarları veya özellik seçimi gibi yöntemleri kullanarak modelinizi ayarlayabilirsiniz.
+
+# Tahminler Yapma:
+
+Modeli kullanarak yeni veri noktaları üzerinde obezite tahminleri yapılması.
+
+# Sonuçların İncelenmesi:
+
+Tahmin sonuçlarının değerlendirilmesi ve modelin ne kadar başarılı olduğunun analiz edilmesi.
